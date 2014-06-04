@@ -112,7 +112,10 @@
 
     <!-- blackberry10 -->
     <platform name="blackberry10">
+        <asset src="src/blackberry10/cldr" target="plugins/org.apache.cordova.globalization/cldr" />
         <source-file src="src/blackberry10/moment/moment-with-langs.min.js" target-dir="Globalization" />
+        <source-file src="src/blackberry10/cldrjs/dist/cldr.js" target-dir="Globalization" />
+        <source-file src="src/blackberry10/globalize/dist/globalize.js" target-dir="Globalization" />
         <source-file src="src/blackberry10/globalizer.js" target-dir="Globalization" />
         <source-file src="src/blackberry10/index.js" target-dir="Globalization" />
     </platform>

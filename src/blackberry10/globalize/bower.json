@@ -1,0 +1,20 @@
+{
+  "name": "globalize",
+  "version": "1.0.0-alpha.2",
+  "ignore": [
+    "**/.*",
+    "test",
+    "CONTRIBUTING.md",
+    "bower.json"
+  ],
+  "dependencies": {
+    "cldrjs": "0.3.4"
+  },
+  "devDependencies": {
+    "jquery": "2.0.3",
+    "qunit": "1.12.0",
+    "requirejs": "2.1.9",
+    "requirejs-plugins": "1.0.2",
+    "requirejs-text": "2.0.10"
+  }
+}
