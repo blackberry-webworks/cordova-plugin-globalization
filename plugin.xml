@@ -31,11 +31,11 @@
     <js-module src="www/GlobalizationError.js" name="GlobalizationError">
         <clobbers target="window.GlobalizationError" />
     </js-module>
-    
+
     <js-module src="www/globalization.js" name="globalization">
         <clobbers target="navigator.globalization" />
     </js-module>
-    
+
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
@@ -47,7 +47,7 @@
         <source-file src="src/android/Globalization.java" target-dir="src/org/apache/cordova/globalization" />
         <source-file src="src/android/GlobalizationError.java" target-dir="src/org/apache/cordova/globalization" />
     </platform>
-       
+
     <!-- amazon-fireos -->
     <platform name="amazon-fireos">
         <config-file target="res/xml/config.xml" parent="/*">
@@ -59,7 +59,7 @@
         <source-file src="src/android/Globalization.java" target-dir="src/org/apache/cordova/globalization" />
         <source-file src="src/android/GlobalizationError.java" target-dir="src/org/apache/cordova/globalization" />
     </platform>
-    
+
    <!-- ubuntu -->
    <platform name="ubuntu">
        <header-file src="src/ubuntu/globalization.h" />
@@ -71,10 +71,10 @@
    </platform>
 
    <!-- ios -->
-   <platform name="ios">    
+   <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="Globalization">
-                <param name="ios-package" value="CDVGlobalization" /> 
+                <param name="ios-package" value="CDVGlobalization" />
             </feature>
         </config-file>
         <header-file src="src/ios/CDVGlobalization.h" />
@@ -108,5 +108,12 @@
         <js-module src="src/tizen/GlobalizationProxy.js" name="GlobalizationProxy">
             <runs/>
         </js-module>
+    </platform>
+
+    <!-- blackberry10 -->
+    <platform name="blackberry10">
+        <source-file src="src/blackberry10/moment/moment-with-langs.min.js" target-dir="Globalization" />
+        <source-file src="src/blackberry10/globalizer.js" target-dir="Globalization" />
+        <source-file src="src/blackberry10/index.js" target-dir="Globalization" />
     </platform>
 </plugin>
